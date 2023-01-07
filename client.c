@@ -176,7 +176,7 @@ int main()
     char *divide = "|";     
     char c_sum[MAX];
     boolean regist =FALSE;
-    printf("servere baglanmak icin username yaziniz \n");
+    printf("Enter username for connect server \n");
     while (1)
     {
 
@@ -192,7 +192,7 @@ int main()
               strcat(sendbufa,"0");
               strcat(sendbufa,"|");
               strcat(sendbufa,sendbuf);
-              printf("sunucudaki online kullanicilar:\n",sendbufa);
+              printf("Online users:\n",sendbufa);
               regist=TRUE;
               sent(server,sendbufa);
           }
